@@ -1,0 +1,94 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dxclusive.ClassPage"
+             BackgroundColor="White">
+
+    <!-- Background Gradient -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#FED974" Offset="0.0" />
+            <GradientStop Color="#F66D3C" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <VerticalStackLayout Padding="20,50,20,10" Spacing="10">
+
+        <!-- Back Button อยู่บรรทัดแยกด้านบน -->
+        <Button Text="←"
+                BackgroundColor="Transparent"
+                TextColor="Black"
+                FontSize="18"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                Clicked="OnBackButtonClicked" />
+
+        <!-- Title CLASS -->
+        <Label Text="CLASS"
+               FontSize="32"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               TextColor="#872121" />
+
+        <!-- Class Buttons -->
+        <ScrollView>
+            <VerticalStackLayout Spacing="10" Padding="0,20,0,0">
+                <Button Text="ปี 1 เทอม 1"
+                        FontSize="20"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        CornerRadius="10"
+                        HorizontalOptions="FillAndExpand" />
+
+                <Button Text="ปี 1 เทอม 2"
+                        FontSize="20"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        CornerRadius="10"
+                        HorizontalOptions="FillAndExpand" />
+
+                <Button Text="ปี 2 เทอม 1"
+                        FontSize="20"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        CornerRadius="10"
+                        HorizontalOptions="FillAndExpand" />
+
+                <Button Text="ปี 2 เทอม 2"
+                        FontSize="20"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        CornerRadius="10"
+                        HorizontalOptions="FillAndExpand" />
+
+                <Button Text="ปี 3 เทอม 1"
+                        FontSize="20"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        CornerRadius="10"
+                        HorizontalOptions="FillAndExpand" />
+
+                <Button Text="ปี 3 เทอม 2"
+                        FontSize="20"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        CornerRadius="10"
+                        HorizontalOptions="FillAndExpand" />
+
+                <Button Text="ปี 4 เทอม 1"
+                        FontSize="20"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        CornerRadius="10"
+                        HorizontalOptions="FillAndExpand" />
+
+                <Button Text="ปี 4 เทอม 2"
+                        FontSize="20"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        CornerRadius="10"
+                        HorizontalOptions="FillAndExpand" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>
